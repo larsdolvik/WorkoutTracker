@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h3= title
+  form#form_add_student(name="adduser", method="post", action="/adduser")
+    span Navn
+    span &nbsp;
+    input#input_name(type="text", placeholder="Navn", name="user")
+    br
+    br
+    span Brukernavn
+    span &nbsp;
+    input#input_street(type="text", placeholder="Brukernavn", name="brukernavn")
+    br
+    br
+    span Epost
+    span &nbsp;
+    input#input_city(type="text", placeholder="Epost", name="epost")
+    br
+    br
+    span Passord
+    span &nbsp;
+    input#input_state(type="text", placeholder="Passord", name="passord")
+    br
+    br
+    button#submit_student(type="submit") submit
